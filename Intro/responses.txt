@@ -1,1 +1,3 @@
-
+git version 2.35.0
+Python 2.7.16
+pip 18.1
