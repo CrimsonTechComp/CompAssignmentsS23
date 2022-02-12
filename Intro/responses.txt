@@ -1,1 +1,10 @@
 
+Git version:
+git version 2.17.1 (ubuntu))
+2.25.1 (wsl)
+
+Python Version:
+Python 3.8.2 (wsl)
+
+Pip:
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
