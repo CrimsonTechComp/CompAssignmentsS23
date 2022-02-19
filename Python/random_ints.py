@@ -1,7 +1,14 @@
 import random
 
 def random_ints():
-    # Your code here!
+    num_list = [] 
+
+    while int(random.random() * 10 + 1) != 6:
+        num_list.append(int(random.random() * 10 + 1))
+
+    num_list.append(6)
+
+    return num_list
 
 def test():
     N = 10000
