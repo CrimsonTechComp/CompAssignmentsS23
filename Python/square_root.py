@@ -1,10 +1,8 @@
 import math
 
 def square_root(n):
-    if not type(n) == int or n < 0: 
-        return -1
-    else:
-        return n ** 0.5 
+    # Your code here!
+    return -1;
 
 def test():
     assert square_root(4) == 2

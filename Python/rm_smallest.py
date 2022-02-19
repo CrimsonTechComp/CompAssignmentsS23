@@ -1,20 +1,6 @@
-import sys 
-
 def rm_smallest(d):
     # Your code here!
-    if d == {}:
-        return d 
-    
-    smallest = sys.maxsize 
-    small_key = sys.maxsize 
-
-    for key in d: 
-        if d[key] < smallest:
-            smallest = d[key]
-            small_key = key 
-    del d[small_key] 
-    
-    return d 
+    return 0;
 
 def test():
     assert 'a' in rm_smallest({'a':1,'b':-10}).keys()
