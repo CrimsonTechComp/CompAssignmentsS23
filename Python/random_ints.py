@@ -10,7 +10,6 @@ def random_ints():
 
     return num_list
 
-
 def test():
     N = 10000
     total_length = 0
