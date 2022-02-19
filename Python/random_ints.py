@@ -2,7 +2,13 @@ import random
 
 def random_ints():
     # Your code here!
-
+    x=(int) (random.random()*10)+1
+    sophia=[]
+    while x != 6:
+        sophia.append(x)
+        x =(int) (random.random()*10)+1
+    sophia.append(x)
+    return sophia
 
 def test():
     N = 10000
