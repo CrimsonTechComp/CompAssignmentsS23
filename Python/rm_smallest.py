@@ -1,6 +1,22 @@
+from cgitb import small
+from optparse import Values
+import sys
+
+
 def rm_smallest(d):
     # Your code here!
-    return 0;
+    small = sys.maxsize 
+    skey = sys.maxsize 
+
+    if d == {}:
+        return d
+    else:
+        for key in d: 
+            if d[key] < small:
+                small = d[key]
+                skey = key 
+        del d[skey] 
+    return d;
 
 def test():
     assert 'a' in rm_smallest({'a':1,'b':-10}).keys()
