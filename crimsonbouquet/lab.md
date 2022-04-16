@@ -52,7 +52,7 @@ Uncomment the following line in `crimsonbouquet/urls.py`:
 path('content/', include('content.urls'))
 ```
 
-**!! Now start up the server with `python manage.py runserver`**. Go to `localhost:8000/content/`. What do you see?
+Now start up the server with `python manage.py runserver`. Go to `localhost:8000/content/`. What do you see?
 In essence, any url is first passed to crimsonbouquet/urls.py. It matches against each of the url patterns, here with `content/`. That portion is now stripped off, and is passed to `content.urls`, where the remainder, which is just `/`, matches to display what is defined by `views.index`.
 
 ## Building models and migrating
@@ -334,7 +334,7 @@ class Query(graphene.ObjectType):
 schema = graphene.Schema(query=Query)
 ```
 
-**!! In `settings.py`, uncomment the settings for GRAPHENE, and also uncomment the line in `urls.py` that has GraphQL in it. !!**
+In `settings.py`, uncomment the settings for GRAPHENE, and also uncomment the line in `urls.py` that has GraphQL in it.
 
 The `schema.py` file essentially is telling GraphQL the underlying representation of the data we already have stored, and how to respond when certain things are queried of it. 
 Let's discuss what's going on here. 

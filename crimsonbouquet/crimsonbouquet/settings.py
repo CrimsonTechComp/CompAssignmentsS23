@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'content.apps.ContentConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,9 +115,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-# GRAPHENE = {
-#     'SCHEMA': 'content.schema.schema'
-# }
+GRAPHENE = {
+    'SCHEMA': 'content.schema.schema'
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
