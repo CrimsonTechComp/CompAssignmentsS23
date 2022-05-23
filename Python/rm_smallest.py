@@ -1,6 +1,14 @@
 def rm_smallest(d):
-    # Your code here!
-    return 0;
+  things = d.items()
+  min_val = min(d.values())
+  for (k, v) in things: 
+    if v == min_val:
+      del d[k]
+      break
+    else:
+      continue
+  return 0;
+
 
 def test():
     assert 'a' in rm_smallest({'a':1,'b':-10}).keys()

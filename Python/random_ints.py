@@ -1,7 +1,16 @@
 import random
 
 def random_ints():
-    # Your code here!
+    l = []
+    while True:
+        r = random.randint(1, 11)
+        if not r == 6:
+            l.append(r)
+            continue
+        else:
+            l.append(r)
+            break
+    return l
 
 
 def test():

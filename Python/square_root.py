@@ -1,7 +1,7 @@
 import math
 
 def square_root(n):
-    # Your code here!
+    return math.sqrt(n)
     return -1;
 
 def test():
