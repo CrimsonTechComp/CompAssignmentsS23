@@ -2,7 +2,12 @@ import random
 
 def random_ints():
     # Your code here!
-
+    lst = list()
+    while(True):
+        num = random.randint(1, 10)
+        lst.append(num)
+        if(num == 6):
+            return lst
 
 def test():
     N = 10000
