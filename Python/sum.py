@@ -1,6 +1,8 @@
 def sum(lst, n):
-    # Your code here!
-    return False
+    count = 0 
+    for x in lst:
+        count += x
+    return count == n 
 
 def test():
     assert sum([-1, 1], 0)

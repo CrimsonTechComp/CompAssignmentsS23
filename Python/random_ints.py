@@ -1,7 +1,11 @@
 import random
 
 def random_ints():
-    # Your code here!
+    lst = [] 
+    while True:
+        lst.append(random.randint(1,10))
+        if lst[-1] == 6:
+            return lst
 
 
 def test():
