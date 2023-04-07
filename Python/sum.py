@@ -1,6 +1,13 @@
 def sum(lst, n):
-    # Your code here!
-    return False
+    # initialize the sum to zero
+    total = 0
+    
+    # loop over the list and add each element to the total
+    for num in lst:
+        total += num
+    
+    # check if the sum equals the given number n and return the appropriate boolean value
+    return total == n
 
 def test():
     assert sum([-1, 1], 0)

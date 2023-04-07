@@ -1,8 +1,17 @@
 import random
 
 def random_ints():
-    # Your code here!
-
+# initialize an empty list to store the numbers
+  numbers = []
+  # initialize a variable to store the current number
+  number = 0
+  # loop until the number is 6
+  while number != 6:
+    # generate a random number in the range [1,10]
+    number = int(random.random()*10) + 1
+    # append the number to the list
+    numbers.append(number)
+  return numbers
 
 def test():
     N = 10000
