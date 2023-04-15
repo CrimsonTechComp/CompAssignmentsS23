@@ -1,7 +1,7 @@
 import random
 
 def random_ints():
-    # Your code here!
+    return [random.randint(1, 5) for _ in range(9)] + [6]
 
 
 def test():
